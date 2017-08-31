@@ -1,0 +1,14 @@
+{{#goods}}
+<div class="content-item" data-id="{{goodId}}">
+	<a href="detail.html?id={{goodId}}">
+	<div class="content-img">
+		<img class="good-img" src="{{imgUrl}}" />
+	</div>
+	<p class="good-title">{{title}}</p>
+	</a>
+	<p class="good-price">
+		<span class="price">&yen;{{price}}.00</span>
+		<span class="old-price">&yen;{{oldPrice}}.00</span>
+	</p>
+</div>
+{{/goods}}

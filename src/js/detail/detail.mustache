@@ -1,0 +1,30 @@
+{{#good}}
+<div class="good-info">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="slide-img" src="{{imgUrl}}" /></div>
+            <div class="swiper-slide"><img class="slide-img" src="{{imgUrl}}" /></div>
+            <div class="swiper-slide"><img class="slide-img" src="{{imgUrl}}" /></div>
+            <div class="swiper-slide"><img class="slide-img" src="{{imgUrl}}" /></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="info">
+        <span class="brand">{{brand}} </span>
+        <span class="title">{{title}}</span>
+        <div class="price">
+            <span class=" current-price">&yen;{{price}}.00</span>
+            <span class="old-price">&yen;{{oldPrice}}.00</span>
+        </div>
+        <p class="buyers">购买人数：{{buyers}}<p>
+    </div>
+</div>
+<a class="show-details" href="show-detail.html?id={{goodId}}">
+    <div class="icon">i</div>
+    查看商品详情
+    <div class="arrow-box">
+        <div class="arrow-top"></div>
+        <div class="arrow-bottom"></div>
+    </div>
+</a>
+{{/good}}

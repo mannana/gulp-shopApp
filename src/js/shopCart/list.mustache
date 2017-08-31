@@ -1,0 +1,18 @@
+{{#cartList}}
+    <li class="cart-item" data-id="{{id}}">
+        <img class="good-img" src="{{imgurl}}" />
+        <div class="cart-info">
+        <a class="title" href="detail.html?id=2">
+            <span class="brand">{{brand}}</span>
+            <span class="good-title">{{title}}</span>
+        </a>
+        <div class="price-box">单价：<span class="price">&yen;{{price}}</span></div>
+        <div class="num-box js-inputcon">数量：
+            <div class="btn js-reduce">-</div>
+            <div contenteditable="true" class="num-value js-num" >{{count}}</div>
+            <div class="btn js-add">+</div>
+        </div>
+        </div>
+        <div class="delete js-delete iconfont">&#xe68d;</div>
+    </li>
+{{/cartList}}

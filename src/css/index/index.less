@@ -1,0 +1,89 @@
+@import "../common/base.less";
+@import "../common/border.less";
+@import "../iconfont/iconfont.less";
+@import '../common/header.less';
+@import '../common/footer.less';
+.classify-wrapper{
+    background: #9a9fa5;
+    overflow: hidden;
+    width: 100%;
+}
+.classify-scroller{
+    float: left;
+}
+.category-list{
+    height: .54rem;
+    line-height: .54rem;
+    overflow: hidden;
+    float: left;
+    white-space: nowrap;
+    width: 100%;
+    font-size: 0;
+}
+.category-item{
+    display: inline-block;
+    width:.6rem;
+    font-size: .29rem;
+    text-align: center;
+}
+.category-item-active{
+    color: #fff;
+}
+.category-item-active::after{
+    content: "";
+    width: 0;
+    height: 0;
+    border: .1rem solid transparent;
+    border-bottom-color:#fff;
+    margin-left: -0.25rem;
+    bottom:0;
+}
+.content-wrapper{
+    overflow: hidden;
+    position: absolute;
+    top: 1.40rem;
+    left: 0;
+    right: 0;
+    bottom: .98rem;
+    background: #f3f4f6;
+}
+.content-scroller{
+    overflow: hidden;
+}
+.content-item{
+    width: 44%;
+    padding: 3%;
+    float: left;
+}
+.content-img{
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    padding-bottom: 110%; /*高和宽的比*/
+}
+.good-img{
+    width: 100%;
+    margin: .2rem 0;
+}
+.good-title{
+    width: 100%;
+    text-align: center;
+    color: #555;
+    font-size: .3rem;
+    line-height: .6rem;
+    font-weight: bold;
+}
+.good-price{
+    width: 100%;
+}
+.price{
+    color: #dc4a4d;
+    float: left;
+    padding-left: .2rem;
+}
+.old-price{
+    color: #878787;
+    text-decoration: line-through;
+    float: right;
+    padding-right: .2rem;
+}
